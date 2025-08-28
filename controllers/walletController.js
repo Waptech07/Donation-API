@@ -1,5 +1,5 @@
 const { Wallet } = require('../models');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 exports.getWallet = async (req, res) => {
     const { pin } = req.query;
