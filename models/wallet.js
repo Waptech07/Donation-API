@@ -38,3 +38,5 @@ module.exports = (sequelize, DataTypes) => {
 
   return Wallet;
 };
+
+// update
