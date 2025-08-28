@@ -14,7 +14,7 @@ exports.register = [
 
         try {
             const user = await User.create(req.body);
-            res.status(201).json({ message: 'User registered successfully' });
+            return res.status(201).json({ message: 'User registered successfully' });
         } catch (error) {
             if (error.name === 'SequelizeUniqueConstraintError') {
                 // Handle unique constraint error (e.g., duplicate email)
